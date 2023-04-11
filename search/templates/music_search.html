@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Search</title>
+</head>
+<body>
+    <h1 style="color:blue;">Search the Music</h1>
+    <form action="{% url 'search_results' %}" method="get">
+        <label for="search-term">Enter the Music you want to search for:</label>
+        <input type="text" id="search-term" name="term" placeholder="Name of music">
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Search Results</title>
+</head>
+<body>
+    <h1 style="color: blue;">Search Results</h1>
+    <ul>
+    {% for result in data.results %}
+        <li>{{ result.collectionName }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
